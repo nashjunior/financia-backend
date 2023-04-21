@@ -30,6 +30,13 @@ export class CreateTransactions1680401203280 implements MigrationInterface {
           precision: 10,
           isNullable: false,
         },
+        {
+          name: 'fee',
+          type: 'numeric',
+          scale: 2,
+          precision: 10,
+          isNullable: true,
+        },
         { name: 'observation', type: 'text', isNullable: true },
       ],
       foreignKeys: [
